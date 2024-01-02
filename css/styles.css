@@ -76,7 +76,6 @@ body {
 .logo-blue {
   color: var(--color-text);
   position: relative;
-  color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -124,7 +123,6 @@ body {
   gap: 40px;
 }
 
-
 .button {
   color: var(--color-text);
   font-family: "Roboto", sans-serif;
@@ -138,11 +136,14 @@ body {
   border-radius: 4px;
   display: flex;
   justify-content: center;
-  margin-bottom: 72px ;
+  margin-bottom: 72px;
   border: 1px solid var(--button-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
-  
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .button:hover
  {
@@ -436,8 +437,7 @@ display: flex;
 }
 
 
-.portfolio-image
-{
+.portfolio-image {
   display: block;
   width: calc((100% - 48px) / 3);
   width: 100%;
@@ -725,4 +725,13 @@ justify-content: center;
 
 .svg-modal-button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.list-grid li:hover .portfolio-image .blue-paragraph-text {
+  transform: translateY(0%);
+}
+
+.list-grid li:focus .portfolio-image .blue-paragraph-text {
+  transform: translateY(0%);
 }
