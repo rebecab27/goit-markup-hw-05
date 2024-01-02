@@ -16,6 +16,15 @@
 *::before,
 *::after{
   box-sizing: border-box;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+
+
 }
 
 body {
@@ -98,6 +107,8 @@ body {
   letter-spacing: 0.32px;
   display: flex;
   gap: 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1;
+}
   
 
 .adress-list {
@@ -105,7 +116,7 @@ body {
   gap: 40px;
 }
 
-}
+
 .button {
   color: var(--color-text);
   font-family: "Roboto", sans-serif;
@@ -633,7 +644,8 @@ justify-content: center;
 
 .modal
 {
-
+  height: 100%;
+  width: 100%;
 z-index: 10;
 position: fixed;
 background-color: rgba(46, 47, 66, 0.4);
@@ -661,7 +673,7 @@ opacity: 0;
   overflow: hidden;
 }
 
-.blue-paragraph
+.blue-paragraph-text
 {
   position: absolute;
   top: 0;
