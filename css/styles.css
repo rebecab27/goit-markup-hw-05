@@ -714,6 +714,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-b
 }
 
 .button-modal-window {
+  position: absolute;
   top: 24px;
   right: 24px;
   width: 24px;
@@ -727,7 +728,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-b
   padding: 0;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: absolute;
 }
 
 .button-modal-window:hover,
@@ -742,17 +742,10 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-b
 }
 
 .svg-modal-button {
+  fill: currentColor; /* Permite să preia culoarea de la elementul părinte (button-modal-window) */
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Stiluri pentru fereastra modală */
-.modal-window:hover .button-modal-window .svg-modal-button {
-  fill: #ffffff;
-}
-
-.svg-modal-button {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .list-grid li:hover .portfolio-image .blue-paragraph-text {
   transform: translateY(0%);
