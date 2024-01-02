@@ -731,13 +731,13 @@ justify-content: center;
 .button-modal-window:hover .svg-modal-button,
 .button-modal-window:focus .svg-modal-button {
   fill: #ffffff;
+  background-color: #404bbf;
+  border: none;
 }
 
 .svg-modal-button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 .list-grid li:hover .portfolio-image .blue-paragraph-text {
   transform: translateY(0%);
