@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <div class="modal is-hidden" data-modal></div>
+    <button data-modal-close>Close</button>
     <header class="top-line">
       <div class="container header-links">
         <!-- Top line -->
@@ -61,7 +63,7 @@
           <h1 class="title-web-studio">
             Effective Solutions for Your Business
           </h1>
-          <button class="order-service-button" type="button">
+          <button class="order-service-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -512,5 +514,6 @@
         />
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
