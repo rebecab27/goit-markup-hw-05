@@ -742,18 +742,8 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-b
 }
 
 .svg-modal-button {
+  fill: currentColor; /* Permite să preia culoarea de la elementul părinte (button-modal-window) */
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-window:hover .button-modal-window,
-.modal-window:focus .button-modal-window {
-  border: none;
-  background-color: #404bbf;
-}
-
-.modal-window:hover .button-modal-window .svg-modal-button,
-.modal-window:focus .button-modal-window .svg-modal-button {
-  fill: #ffffff;
 }
 
 
