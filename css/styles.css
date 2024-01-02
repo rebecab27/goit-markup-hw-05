@@ -77,6 +77,7 @@ body {
   color: var(--color-text);
   position: relative;
   color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-header-footer {
@@ -114,7 +115,7 @@ body {
   letter-spacing: 0.32px;
   display: flex;
   gap: 40px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
 
@@ -370,7 +371,7 @@ padding: 120px 0;
 }
 
 .container {
-
+display: flex;
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
@@ -651,7 +652,7 @@ justify-content: center;
   fill: var(--color-light);
 }
 
-.modal-window {
+..modal-window {
   position: fixed;
   top: 0;
   left: 0;
@@ -669,7 +670,7 @@ justify-content: center;
   width: 408px;
   min-height: 584px;
   background-color: #fcfcfc;
-  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
